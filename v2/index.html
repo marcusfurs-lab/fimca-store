@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FIMCA Store — Mochilas, bonés e acessórios do campus | v2</title>
+<meta name="description" content="Mochilas, bonés, copo térmico e chaveiros da FIMCA Store. Retirada no campus em até 2h, troca em 7 dias e 5% OFF no PIX. Campus FIMCA, Porto Velho.">
+<meta name="theme-color" content="#131B33">
+<meta name="robots" content="noindex, nofollow">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ══ barra de benefícios ══ -->
+<div class="promo">
+  <div class="promo__track" id="promoTrack">
+    <span>Retirada grátis no campus</span><span>Troca em até 7 dias</span><span>5% OFF no PIX</span><span>Entrega em Porto Velho</span><span>Coleção 2026 disponível</span>
+  </div>
+</div>
+
+<!-- ══ header ══ -->
+<header class="head" id="head">
+  <div class="wrap">
+    <div class="head__bar">
+      <div class="head__l">
+        <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><i></i><i></i></button>
+        <button class="ibtn" id="searchBtn" aria-label="Buscar">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        </button>
+      </div>
+
+      <a class="logo" href="#top" aria-label="FIMCA Store — início">FIMCA<i></i><em>Store</em></a>
+
+      <div class="head__r">
+        <a class="ibtn" href="#loja" aria-label="Nossa loja no campus">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h16v11H4z"/><path d="M4 9l1.6-5h12.8L20 9"/><path d="M9.5 20v-6h5v6"/></svg>
+        </a>
+        <button class="ibtn" id="bagBtn" aria-label="Abrir sacola">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7h14l1 13H4L5 7z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
+          <b class="ibtn__n" id="bagCount">0</b>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <nav class="head__nav" aria-label="Categorias">
+    <ul>
+      <li><a href="#mochilas">Mochilas</a></li>
+      <li><a href="#acessorios">Bonés</a></li>
+      <li><a href="#acessorios">Copos</a></li>
+      <li><a href="#acessorios">Chaveiros</a></li>
+      <li><a href="#kits">Kits</a></li>
+      <li><a href="#campanha">Campanha</a></li>
+      <li><a href="#loja">Loja no campus</a></li>
+      <li><a href="#kits" class="is-sale">Ofertas</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ══ menu mobile ══ -->
+<div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Menu de navegação">
+  <a href="#mochilas" data-mlink style="--d:60ms">Mochilas <span>3 modelos</span></a>
+  <a href="#acessorios" data-mlink style="--d:110ms">Bonés <span>3 cores</span></a>
+  <a href="#acessorios" data-mlink style="--d:160ms">Copo térmico <span>500 ml</span></a>
+  <a href="#acessorios" data-mlink style="--d:210ms">Chaveiros <span>A partir de R$ 25</span></a>
+  <a href="#kits" data-mlink style="--d:260ms">Kits <span>Até 21% OFF</span></a>
+  <a href="#campanha" data-mlink style="--d:310ms">Campanha <span>2026</span></a>
+  <a href="#loja" data-mlink style="--d:355ms">Loja no campus <span>Seg a sex</span></a>
+  <a href="#faq" data-mlink style="--d:360ms">Dúvidas <span>FAQ</span></a>
+  <div class="menu__foot">
+    <p class="kicker">Campus FIMCA · Porto Velho, RO</p>
+    <p class="kicker">Segunda a sexta · 13h às 22h</p>
+    <p class="kicker kicker--sun" style="justify-self:start;margin-top:.4rem">Wear your journey</p>
+  </div>
+</div>
+
+<main id="top">
+
+<!-- ══════════════════ HERO ══════════════════ -->
+<section class="hero" aria-label="Destaques">
+  <div class="hero__slides" id="heroSlides">
+
+    <article class="hero__slide on" data-slide>
+      <img src="assets/img/hero-prateleira.jpg" alt="Prateleiras da FIMCA Store com mochilas nas cores preta, creme, branca e azul" fetchpriority="high">
+      <div class="hero__inner">
+        <div class="wrap">
+          <div class="hero__grid">
+            <div>
+              <div class="hero__eyebrow">
+                <span class="kicker kicker--sun">Coleção 2026</span>
+                <span class="kicker hero__meta">FIMCA Essentials</span>
+              </div>
+              <h1 class="hero__h1">Mochilas, bonés e acessórios com a identidade FIMCA.</h1>
+              <p class="hero__sub">Peças feitas para a rotina do campus — e para tudo que vem depois dela.</p>
+            </div>
+            <div class="hero__cta">
+              <a class="btn btn--light" href="#mochilas">Comprar</a>
+              <a class="btn" href="#loja" style="--bg:transparent;--bfg:#EDEAE1;border-color:color-mix(in srgb,#EDEAE1 45%,transparent)">Ver a loja</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="hero__slide" data-slide>
+      <img src="assets/img/hero-loja.jpg" alt="Fachada de madeira da FIMCA Store dentro do campus" loading="lazy">
+      <div class="hero__inner">
+        <div class="wrap">
+          <div class="hero__grid">
+            <div>
+              <div class="hero__eyebrow">
+                <span class="kicker kicker--sun">Loja física</span>
+                <span class="kicker hero__meta">Seg a sex · 13h às 22h</span>
+              </div>
+              <p class="hero__h1">Comprou online, retira no campus no mesmo dia.</p>
+              <p class="hero__sub">Sem frete, sem espera. Prove o caimento, troque o tamanho na hora e leve com você.</p>
+            </div>
+            <div class="hero__cta">
+              <a class="btn btn--light" href="#loja">Como funciona</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="hero__slide" data-slide>
+      <img src="assets/img/mochila-preta.jpg" alt="Mochila preta FIMCA com brasão da Faculdade Metropolitana" loading="lazy">
+      <div class="hero__inner">
+        <div class="wrap">
+          <div class="hero__grid">
+            <div>
+              <div class="hero__eyebrow">
+                <span class="kicker kicker--sun">Kits</span>
+                <span class="kicker hero__meta">Até 21% OFF</span>
+              </div>
+              <p class="hero__h1">Kit Calouro: mochila, copo e chaveiro.</p>
+              <p class="hero__sub">Mochila Metropolitana, copo térmico e chaveiro por R$ 289 — o combo mais pedido da loja.</p>
+            </div>
+            <div class="hero__cta">
+              <a class="btn btn--light" href="#kits">Ver os kits</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+  <div class="hero__dots" id="heroDots" role="tablist" aria-label="Trocar destaque">
+    <button type="button" class="on" aria-label="Destaque 1"><i></i></button>
+    <button type="button" aria-label="Destaque 2"><i></i></button>
+    <button type="button" aria-label="Destaque 3"><i></i></button>
+  </div>
+</section>
+
+<!-- ══════════════════ USP ══════════════════ -->
+<section class="usp" aria-label="Vantagens">
+  <div class="wrap">
+    <div class="usp__grid">
+      <div class="usp__item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h11v9H4z"/><path d="M15 11h4l2 3v3h-6"/><circle cx="7.5" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg>
+        <div><b>Retirada no campus</b><span>Pronto em até 2 horas</span></div>
+      </div>
+      <div class="usp__item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 0 1 13.7-5.6L20 8"/><path d="M20 4v4h-4"/><path d="M20 12a8 8 0 0 1-13.7 5.6L4 16"/><path d="M4 20v-4h4"/></svg>
+        <div><b>Troca em 7 dias</b><span>Direto na loja, sem taxa</span></div>
+      </div>
+      <div class="usp__item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 21 12l-9 9-9-9z"/><path d="M9 12h6"/><path d="M12 9v6"/></svg>
+        <div><b>5% OFF no PIX</b><span>Aplicado no checkout</span></div>
+      </div>
+      <div class="usp__item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.7 7-11a7 7 0 1 0-14 0c0 5.3 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        <div><b>Entrega em PVH</b><span>A partir de R$ 12</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ MOCHILAS ══════════════════ -->
+<section class="sec" id="mochilas">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-head__txt">
+        <p class="kicker" data-rv="fade">Coleção 2026</p>
+        <h2 class="h-sec" data-rv style="--d:60ms">Mochilas</h2>
+      </div>
+      <p class="small" data-rv="fade" style="--d:120ms;max-width:30ch;text-align:right">Mesma modelagem, três acabamentos. Compartimento para notebook em todas.</p>
+    </div>
+
+    <div class="grid-3">
+
+      <article class="pcard" data-rv="fade"
+               data-name="Mochila Metropolitana Preta" data-price="189" data-old="219"
+               data-img="assets/img/mochila-preta.jpg"
+               data-sw="#1A1A1A" data-sizes="Único"
+               data-desc="Nylon resistente, bolso frontal com zíper duplo e brasão bordado da Faculdade Metropolitana.">
+        <div class="pcard__media">
+          <div class="pcard__flags"><b class="flag">Best seller</b><b class="flag flag--off">14% OFF</b></div>
+          <img src="assets/img/mochila-preta.jpg" alt="Mochila preta FIMCA com brasão bordado da Faculdade Metropolitana" loading="lazy">
+          <img class="alt" src="assets/img/mochila-preta-2.jpg" alt="" aria-hidden="true" loading="lazy">
+          <button class="pcard__wish" data-wish aria-label="Salvar Mochila Metropolitana Preta">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.5-7-9.5A4 4 0 0 1 12 7a4 4 0 0 1 7 3.5C19 15.5 12 20 12 20z"/></svg>
+          </button>
+          <button class="pcard__quick" data-quick>Compra rápida</button>
+        </div>
+        <div class="pcard__sw" data-sw-out></div>
+        <h3 class="pcard__name">Mochila Metropolitana Preta</h3>
+        <p class="pcard__price"><s>R$ 219</s> <b>R$ 189</b></p>
+        <p class="stars" data-rating="4.9"><span class="stars__i" aria-hidden="true"></span><b>4.9</b> <span>(118 avaliações)</span></p>
+      </article>
+
+      <article class="pcard" data-rv="fade" style="--d:60ms"
+               data-name="Mochila FIMCA Branca" data-price="189"
+               data-img="assets/img/mochila-branca.jpg"
+               data-sw="#F2F0EA" data-sizes="Único"
+               data-desc="Tecido texturizado claro com o trevo FIMCA estampado. A mais leve da linha.">
+        <div class="pcard__media">
+          <div class="pcard__flags"><b class="flag flag--new">Lançamento</b></div>
+          <img src="assets/img/mochila-branca.jpg" alt="Mochila branca FIMCA com logo do trevo estampado" loading="lazy">
+          <img class="alt" src="assets/img/mochila-branca-2.jpg" alt="" aria-hidden="true" loading="lazy">
+          <button class="pcard__wish" data-wish aria-label="Salvar Mochila FIMCA Branca">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.5-7-9.5A4 4 0 0 1 12 7a4 4 0 0 1 7 3.5C19 15.5 12 20 12 20z"/></svg>
+          </button>
+          <button class="pcard__quick" data-quick>Compra rápida</button>
+        </div>
+        <div class="pcard__sw" data-sw-out></div>
+        <h3 class="pcard__name">Mochila FIMCA Branca</h3>
+        <p class="pcard__price"><b>R$ 189</b></p>
+        <p class="stars" data-rating="4.8"><span class="stars__i" aria-hidden="true"></span><b>4.8</b> <span>(64 avaliações)</span></p>
+      </article>
+
+      <article class="pcard" data-rv="fade" style="--d:120ms"
+               data-name="Mochila Metropolitana Creme" data-price="189"
+               data-img="assets/img/mochila-creme.jpg"
+               data-sw="#E4DAC2" data-sizes="Único"
+               data-desc="Mesma modelagem da preta, em creme. Brasão bordado da Faculdade Metropolitana no topo.">
+        <div class="pcard__media">
+          
+          <img src="assets/img/mochila-creme.jpg" alt="Mochila creme FIMCA com brasão bordado da Faculdade Metropolitana" loading="lazy">
+          <img class="alt" src="assets/img/mochila-creme-2.jpg" alt="" aria-hidden="true" loading="lazy">
+          <button class="pcard__wish" data-wish aria-label="Salvar Mochila Metropolitana Creme">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.5-7-9.5A4 4 0 0 1 12 7a4 4 0 0 1 7 3.5C19 15.5 12 20 12 20z"/></svg>
+          </button>
+          <button class="pcard__quick" data-quick>Compra rápida</button>
+        </div>
+        <div class="pcard__sw" data-sw-out></div>
+        <h3 class="pcard__name">Mochila Metropolitana Creme</h3>
+        <p class="pcard__price"><b>R$ 189</b></p>
+        <p class="stars" data-rating="4.7"><span class="stars__i" aria-hidden="true"></span><b>4.7</b> <span>(41 avaliações)</span></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ TILES / OFERTAS ══════════════════ -->
+<section class="sec surface" id="kits">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-head__txt">
+        <p class="kicker" data-rv="fade">Jeitos de economizar</p>
+        <h2 class="h-sec" data-rv style="--d:60ms">Escolhas inteligentes</h2>
+      </div>
+      <p class="small" data-rv="fade" style="--d:120ms;max-width:34ch;text-align:right">Combos e condições que valem para toda a coleção 2026.</p>
+    </div>
+
+    <div class="tiles">
+      <a class="tile tile--wide" href="#acessorios" data-rv="fade">
+        <img src="assets/img/hero-prateleira.jpg" alt="" aria-hidden="true" loading="lazy">
+        <span class="tile__n">R$ 289</span>
+        <h3>Kit Calouro</h3>
+        <p>Mochila Metropolitana + copo térmico + chaveiro. Economia de R$ 44 no combo.</p>
+        <span class="tile__go">Montar meu kit <svg viewBox="0 0 16 9" aria-hidden="true"><path d="M0 4.5h14M10.5 1 14 4.5 10.5 8"/></svg></span>
+      </a>
+
+      <a class="tile tile--half" href="#mochilas" data-rv="fade" style="--d:70ms">
+        <img src="assets/img/ctx-prateleira.jpg" alt="" aria-hidden="true" loading="lazy">
+        <span class="tile__n">40% OFF</span>
+        <h3>Outlet do campus</h3>
+        <p>Cores de coleções anteriores e últimas unidades, enquanto durar o estoque.</p>
+        <span class="tile__go">Ver o outlet <svg viewBox="0 0 16 9" aria-hidden="true"><path d="M0 4.5h14M10.5 1 14 4.5 10.5 8"/></svg></span>
+      </a>
+
+      <a class="tile tile--third tile--flat" href="#acessorios" data-rv="fade" style="--d:140ms">
+        <span class="tile__n">3 por 2</span>
+        <h3>Leve 3, pague 2</h3>
+        <p>Válido nos bonés e chaveiros. O de menor valor sai por nossa conta.</p>
+        <span class="tile__go">Escolher bonés <svg viewBox="0 0 16 9" aria-hidden="true"><path d="M0 4.5h14M10.5 1 14 4.5 10.5 8"/></svg></span>
+      </a>
+
+      <a class="tile tile--third tile--bone" href="#loja" data-rv="fade" style="--d:210ms">
+        <span class="tile__n">R$ 199</span>
+        <h3>Frete grátis em PVH</h3>
+        <p>Pedidos acima de R$ 199 chegam sem custo em qualquer bairro de Porto Velho.</p>
+        <span class="tile__go">Ver condições <svg viewBox="0 0 16 9" aria-hidden="true"><path d="M0 4.5h14M10.5 1 14 4.5 10.5 8"/></svg></span>
+      </a>
+
+      <a class="tile tile--third" href="#acessorios" data-rv="fade" style="--d:280ms">
+        <img src="assets/img/ctx-loja.jpg" alt="" aria-hidden="true" loading="lazy">
+        <span class="tile__n">10%</span>
+        <h3>Cashback FIMCA</h3>
+        <p>Dez por cento de volta em créditos para usar no próximo drop da loja.</p>
+        <span class="tile__go">Como funciona <svg viewBox="0 0 16 9" aria-hidden="true"><path d="M0 4.5h14M10.5 1 14 4.5 10.5 8"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ BONÉS E ACESSÓRIOS ══════════════════ -->
+<section class="sec" id="acessorios">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-head__txt">
+        <p class="kicker" data-rv="fade">Leva no bolso, usa todo dia</p>
+        <h2 class="h-sec" data-rv style="--d:60ms">Bonés e acessórios</h2>
+      </div>
+      <div class="shelf__nav" data-rv="fade" style="--d:120ms">
+        <button class="arrow" data-rail-prev="railAcc" aria-label="Anterior" disabled>
+          <svg viewBox="0 0 16 12" aria-hidden="true"><path d="M16 6H1M5.5 1 1 6l4.5 5"/></svg>
+        </button>
+        <button class="arrow" data-rail-next="railAcc" aria-label="Próximo">
+          <svg viewBox="0 0 16 12" aria-hidden="true"><path d="M0 6h15M10.5 1 15 6l-4.5 5"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="rail" id="railAcc" tabindex="0" role="region" aria-label="Bonés e acessórios — role para o lado">
+
+      <article class="pcard" data-rv="fade"
+               data-name="Boné Metropolitana Branco" data-price="79" data-old="89"
+               data-img="assets/img/bone-branco.jpg"
+               data-sw="#FFFFFF" data-sizes="Ajustável"
+               data-desc="Trucker branco com tela nas laterais e brasão bordado em fio colorido. Fecho ajustável.">
+        <div class="pcard__media">
+          <div class="pcard__flags"><b class="flag">Best seller</b><b class="flag flag--off">11% OFF</b></div>
+          <img src="assets/img/bone-branco.jpg" alt="Boné branco FIMCA com brasão colorido da Faculdade Metropolitana" loading="lazy">
+          <img class="alt" src="assets/img/bone-branco-2.jpg" alt="" aria-hidden="true" loading="lazy">
+          <button class="pcard__wish" data-wish aria-label="Salvar Boné Metropolitana Branco">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.5-7-9.5A4 4 0 0 1 12 7a4 4 0 0 1 7 3.5C19 15.5 12 20 12 20z"/></svg>
+          </button>
+          <button class="pcard__quick" data-quick>Compra rápida</button>
+        </div>
+        <div class="pcard__sw" data-sw-out></div>
+        <h3 class="pcard__name">Boné Metropolitana Branco</h3>
+        <p class="pcard__price"><s>R$ 89</s> <b>R$ 79</b></p>
+        <p class="stars" data-rating="4.9"><span class="stars__i" aria-hidden="true"></span><b>4.9</b> <span>(203 avaliações)</span></p>
+      </article>
+
+      <article class="pcard" data-rv="fade" style="--d:60ms"
+               data-name="Boné FIMCA Verde" data-price="79"
+               data-img="assets/img/bone-verde.jpg"
+               data-sw="#1F4D36" data-sizes="Ajustável"
+               data-desc="Verde escuro com tela respirável e o trevo FIMCA bordado em branco no painel frontal.">
+        <div class="pcard__media">
+          
+          <img src="assets/img/bone-verde.jpg" alt="Boné verde escuro FIMCA com logo do trevo bordado em branco" loading="lazy">
+          <img class="alt" src="assets/img/bone-verde-2.jpg" alt="" aria-hidden="true" loading="lazy">
+          <button class="pcard__wish" data-wish aria-label="Salvar Boné FIMCA Verde">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.5-7-9.5A4 4 0 0 1 12 7a4 4 0 0 1 7 3.5C19 15.5 12 20 12 20z"/></svg>
+          </button>
+          <button class="pcard__quick" data-quick>Compra rápida</button>
+        </div>
+        <div class="pcard__sw" data-sw-out></div>
+        <h3 class="pcard__name">Boné FIMCA Verde</h3>
+        <p class="pcard__price"><b>R$ 79</b></p>
+        <p class="stars" data-rating="4.8"><span class="stars__i" aria-hidden="true"></span><b>4.8</b> <span>(157 avaliações)</span></p>
+      </article>
+
+      <article class="pcard" data-rv="fade" style="--d:120ms"
+               data-name="Boné Metropolitana Navy" data-price="79"
+               data-img="assets/img/bone-navy.jpg"
+               data-sw="#1B2A5A" data-sizes="Ajustável"
+               data-desc="Azul-marinho fechado, com o brasão da Faculdade Metropolitana bordado em dourado.">
+        <div class="pcard__media">
+          <div class="pcard__flags"><b class="flag flag--new">Novo</b></div>
+          <img src="assets/img/bone-navy.jpg" alt="Boné azul-marinho FIMCA com brasão dourado da Faculdade Metropolitana" loading="lazy">
+          <button class="pcard__wish" data-wish aria-label="Salvar Boné Metropolitana Navy">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.5-7-9.5A4 4 0 0 1 12 7a4 4 0 0 1 7 3.5C19 15.5 12 20 12 20z"/></svg>
+          </button>
+          <button class="pcard__quick" data-quick>Compra rápida</button>
+        </div>
+        <div class="pcard__sw" data-sw-out></div>
+        <h3 class="pcard__name">Boné Metropolitana Navy</h3>
+        <p class="pcard__price"><b>R$ 79</b></p>
+        <p class="stars" data-rating="4.9"><span class="stars__i" aria-hidden="true"></span><b>4.9</b> <span>(96 avaliações)</span></p>
+      </article>
+
+      <article class="pcard" data-rv="fade" style="--d:180ms"
+               data-name="Copo Térmico FIMCA" data-price="119" data-old="139"
+               data-img="assets/img/copo.jpg"
+               data-sw="#FFFFFF" data-sizes="500 ml"
+               data-desc="Aço inox parede dupla com acabamento branco fosco e base escovada. Mantém gelado por horas.">
+        <div class="pcard__media">
+          <div class="pcard__flags"><b class="flag">Best seller</b><b class="flag flag--off">14% OFF</b></div>
+          <img src="assets/img/copo.jpg" alt="Copo térmico branco FIMCA em aço inox com tampa" loading="lazy">
+          <img class="alt" src="assets/img/copo-2.jpg" alt="" aria-hidden="true" loading="lazy">
+          <button class="pcard__wish" data-wish aria-label="Salvar Copo Térmico FIMCA">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.5-7-9.5A4 4 0 0 1 12 7a4 4 0 0 1 7 3.5C19 15.5 12 20 12 20z"/></svg>
+          </button>
+          <button class="pcard__quick" data-quick>Compra rápida</button>
+        </div>
+        <div class="pcard__sw" data-sw-out></div>
+        <h3 class="pcard__name">Copo Térmico FIMCA</h3>
+        <p class="pcard__price"><s>R$ 139</s> <b>R$ 119</b></p>
+        <p class="stars" data-rating="4.9"><span class="stars__i" aria-hidden="true"></span><b>4.9</b> <span>(240 avaliações)</span></p>
+      </article>
+
+      <article class="pcard" data-rv="fade" style="--d:240ms"
+               data-name="Chaveiro Abridor FIMCA" data-price="25"
+               data-img="assets/img/chaveiro.jpg"
+               data-sw="#2E7D3A,#D2601A" data-sizes="Único"
+               data-desc="Alumínio anodizado com abridor na ponta. Sai em verde e laranja, gravado a laser.">
+        <div class="pcard__media">
+          
+          <img src="assets/img/chaveiro.jpg" alt="Chaveiros abridores FIMCA em alumínio verde e laranja" loading="lazy">
+          <img class="alt" src="assets/img/chaveiro-2.jpg" alt="" aria-hidden="true" loading="lazy">
+          <button class="pcard__wish" data-wish aria-label="Salvar Chaveiro Abridor FIMCA">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.5-7-9.5A4 4 0 0 1 12 7a4 4 0 0 1 7 3.5C19 15.5 12 20 12 20z"/></svg>
+          </button>
+          <button class="pcard__quick" data-quick>Compra rápida</button>
+        </div>
+        <div class="pcard__sw" data-sw-out></div>
+        <h3 class="pcard__name">Chaveiro Abridor FIMCA</h3>
+        <p class="pcard__price"><b>R$ 25</b></p>
+        <p class="stars" data-rating="4.8"><span class="stars__i" aria-hidden="true"></span><b>4.8</b> <span>(88 avaliações)</span></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ CAMPANHA ══════════════════ -->
+<section class="sec look-band" id="campanha">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-head__txt">
+        <p class="kicker kicker--sun" data-rv="fade" style="justify-self:start">Campanha 2026</p>
+        <h2 class="h-sec" data-rv style="--d:60ms;color:var(--bone-2)">Vestido no campus</h2>
+      </div>
+      <p class="small look-band__note" data-rv="fade" style="--d:120ms">Imagens das campanhas da loja, gravadas no campus.</p>
+    </div>
+
+    <figure class="look-wide" data-rv="fade">
+      <img src="assets/img/look-grupo.jpg" alt="Estudantes atravessando o hall do campus com peças da FIMCA Store" loading="lazy">
+    </figure>
+
+    <div class="look-grid">
+      <figure class="look" data-rv="fade">
+        <img src="assets/img/look-guarda-chuva.jpg" alt="Estudante sentada na fonte do campus com camiseta FIMCA Since 1998 e guarda-chuva da loja" loading="lazy">
+        <figcaption>Camiseta Since 1998 · guarda-chuva FIMCA</figcaption>
+      </figure>
+      <figure class="look" data-rv="fade" style="--d:80ms">
+        <img src="assets/img/look-bolsa.jpg" alt="Bolsa de viagem preta FIMCA com o trevo bordado em branco e etiqueta dourada" loading="lazy">
+        <figcaption>Bolsa de viagem · trevo bordado</figcaption>
+      </figure>
+      <figure class="look" data-rv="fade" style="--d:160ms">
+        <img src="assets/img/look-tee.jpg" alt="Costas de camiseta FIMCA com estampa do prédio do campus" loading="lazy">
+        <figcaption>Camiseta Campus · estampa nas costas</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ LOJA FÍSICA ══════════════════ -->
+<section class="sec surface" id="loja">
+  <div class="wrap">
+    <div class="store">
+      <figure class="store__media" data-rv="fade">
+        <img src="assets/img/loja.jpg" alt="Fachada de madeira da FIMCA Store no campus" loading="lazy">
+        <figcaption class="store__badge"><i></i> Aberta agora</figcaption>
+      </figure>
+
+      <div class="store__text">
+        <p class="kicker" data-rv="fade">Agora, também em loja física</p>
+        <h2 class="h-sec h-sec--lg" data-rv style="--d:60ms">A loja fica dentro do campus</h2>
+        <p class="lede" data-rv="fade" style="--d:120ms">Comprou pelo site, retira no mesmo dia. Experimenta o caimento, troca o tamanho na hora e leva com você — sem frete e sem espera.</p>
+
+        <div class="store__facts" data-rv="fade" style="--d:180ms">
+          <div>
+            <p class="kicker">Horário</p>
+            <strong>Seg a sex · 13h — 22h</strong>
+          </div>
+          <div>
+            <p class="kicker">Onde</p>
+            <strong>Campus FIMCA · PVH</strong>
+          </div>
+          <div>
+            <p class="kicker">Retirada</p>
+            <strong>Pronta em até 2h</strong>
+          </div>
+          <div>
+            <p class="kicker">Pagamento</p>
+            <strong>PIX, débito e crédito</strong>
+          </div>
+        </div>
+
+        <div data-rv="fade" style="--d:240ms">
+          <a class="btn" href="#faq">Como retirar no campus
+            <svg viewBox="0 0 16 9" aria-hidden="true"><path d="M0 4.5h14M10.5 1 14 4.5 10.5 8"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ ESPECIFICAÇÕES ══════════════════ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-head__txt">
+        <p class="kicker" data-rv="fade">Por que custa o que custa</p>
+        <h2 class="h-sec" data-rv style="--d:60ms">Feito para durar o curso inteiro</h2>
+      </div>
+    </div>
+
+    <div class="specs">
+      <div data-rv="fade">
+        <b data-count="3">3</b>
+        <h3>Modelos de mochila</h3>
+        <p>Preta, creme e branca — todas com compartimento acolchoado para notebook.</p>
+      </div>
+      <div data-rv="fade" style="--d:70ms">
+        <b data-count="7">7</b>
+        <h3>Dias para trocar</h3>
+        <p>Provou em casa e não serviu? Leva na loja do campus e troca sem burocracia.</p>
+      </div>
+      <div data-rv="fade" style="--d:140ms">
+        <b data-count="2">2</b>
+        <h3>Horas para retirar</h3>
+        <p>Pedido feito até as 20h fica pronto no mesmo dia, no balcão da loja.</p>
+      </div>
+      <div data-rv="fade" style="--d:210ms">
+        <b data-count="8">8</b>
+        <h3>Peças na loja</h3>
+        <p>Mochilas, bonés, copo térmico e chaveiro — todos com brasão bordado ou gravado.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ REVIEWS ══════════════════ -->
+<section class="sec surface">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-head__txt">
+        <p class="kicker" data-rv="fade">4.8 de 5 · 1.244 avaliações</p>
+        <h2 class="h-sec" data-rv style="--d:60ms">Quem já veste</h2>
+      </div>
+      <div class="shelf__nav" data-rv="fade" style="--d:120ms">
+        <button class="arrow" data-rail-prev="railRev" aria-label="Anterior" disabled>
+          <svg viewBox="0 0 16 12" aria-hidden="true"><path d="M16 6H1M5.5 1 1 6l4.5 5"/></svg>
+        </button>
+        <button class="arrow" data-rail-next="railRev" aria-label="Próximo">
+          <svg viewBox="0 0 16 12" aria-hidden="true"><path d="M0 6h15M10.5 1 15 6l-4.5 5"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="rev-rail" id="railRev" tabindex="0" role="region" aria-label="Avaliações — role para o lado">
+      <article class="rev">
+        <p class="stars" data-rating="5"><span class="stars__i" aria-hidden="true"></span></p>
+        <p>“Comprei a mochila de manhã e retirei na volta do intervalo. O tecido é bem mais firme do que eu esperava pelo preço.”</p>
+        <footer><i>MB</i><div><b>Marina B.</b><span>Enfermagem · 5º período</span></div></footer>
+      </article>
+      <article class="rev">
+        <p class="stars" data-rating="5"><span class="stars__i" aria-hidden="true"></span></p>
+        <p>“O boné verde virou item fixo meu. Já lavei umas dez vezes e o bordado não soltou nada.”</p>
+        <footer><i>RC</i><div><b>Rafael C.</b><span>Educação Física · 3º período</span></div></footer>
+      </article>
+      <article class="rev">
+        <p class="stars" data-rating="4"><span class="stars__i" aria-hidden="true"></span></p>
+        <p>“A mochila cabe o notebook e os livros de anatomia sem entortar. Só queria que tivesse mais uma cor.”</p>
+        <footer><i>JL</i><div><b>Júlia L.</b><span>Medicina · 2º período</span></div></footer>
+      </article>
+      <article class="rev">
+        <p class="stars" data-rating="5"><span class="stars__i" aria-hidden="true"></span></p>
+        <p>“Peguei o Kit Calouro na primeira semana de aula. Saiu mais barato que comprar tudo separado em outro lugar.”</p>
+        <footer><i>DP</i><div><b>Diego P.</b><span>Direito · 1º período</span></div></footer>
+      </article>
+      <article class="rev">
+        <p class="stars" data-rating="5"><span class="stars__i" aria-hidden="true"></span></p>
+        <p>“Troquei a cor do boné no dia seguinte, sem discussão nenhuma. Atendimento na loja do campus é rápido.”</p>
+        <footer><i>AS</i><div><b>Amanda S.</b><span>Psicologia · 6º período</span></div></footer>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ FAQ ══════════════════ -->
+<section class="sec" id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-head__txt">
+        <p class="kicker" data-rv="fade">Antes de comprar</p>
+        <h2 class="h-sec" data-rv style="--d:60ms">Perguntas frequentes</h2>
+      </div>
+    </div>
+
+    <div class="faq" data-faq>
+      <div class="faq__item">
+        <button class="faq__q" aria-expanded="false">A FIMCA Store tem loja física? <i aria-hidden="true"></i></button>
+        <div class="faq__a"><div><p>Tem. A loja fica dentro do campus do Centro Universitário Aparício Carvalho, em Porto Velho (RO), e abre de segunda a sexta, das 13h às 22h. Dá para provar as peças antes de levar.</p></div></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" aria-expanded="false">Como funciona a retirada no campus? <i aria-hidden="true"></i></button>
+        <div class="faq__a"><div><p>Você finaliza o pedido pelo site escolhendo “retirada no campus”. Pedidos feitos até as 20h ficam prontos no mesmo dia, em até 2 horas. É só apresentar o número do pedido no balcão.</p></div></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" aria-expanded="false">Qual o prazo de entrega em Porto Velho? <i aria-hidden="true"></i></button>
+        <div class="faq__a"><div><p>De 1 a 3 dias úteis para qualquer bairro de Porto Velho, a partir de R$ 12. Pedidos acima de R$ 199 têm frete grátis dentro da cidade.</p></div></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" aria-expanded="false">E se eu não gostar da peça? <i aria-hidden="true"></i></button>
+        <div class="faq__a"><div><p>Você tem 7 dias corridos para trocar, com a peça sem uso e com etiqueta. A troca é feita direto na loja do campus, sem taxa e sem precisar de transportadora.</p></div></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" aria-expanded="false">As mochilas cabem notebook? <i aria-hidden="true"></i></button>
+        <div class="faq__a"><div><p>Cabem. Os três modelos têm compartimento acolchoado que acomoda notebook de até 15 polegadas, além do bolso frontal com zíper. Os bonés são de fecho ajustável, tamanho único.</p></div></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" aria-expanded="false">Dá para personalizar com o nome do curso? <i aria-hidden="true"></i></button>
+        <div class="faq__a"><div><p>As peças saem com o brasão da Faculdade Metropolitana ou com o trevo FIMCA. Personalização com nome de curso ou de turma é feita por encomenda na loja, a partir de 10 unidades.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ NEWSLETTER ══════════════════ -->
+<section class="sec sec--tight news-band">
+  <div class="wrap">
+    <div class="news-grid">
+      <div>
+        <p class="kicker kicker--sun" style="margin-bottom:.8rem">Próximo drop</p>
+        <h2 class="h-sec" style="color:var(--bone-2)">Saiba primeiro quando abrir</h2>
+        <p class="lede" style="margin-top:.7rem">Avisamos por e-mail 24 horas antes de cada lançamento. Sem spam, sem mais de um e-mail por mês.</p>
+      </div>
+      <div>
+        <form class="news-form" id="newsForm" novalidate>
+          <label class="sr" for="newsEmail">Seu e-mail</label>
+          <input id="newsEmail" type="email" placeholder="seu@email.com" autocomplete="email" required>
+          <button class="btn btn--light" type="submit">Assinar</button>
+        </form>
+        <p class="news-msg" id="newsMsg" role="status"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ══════════════════ FOOTER ══════════════════ -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__grid">
+      <div class="foot__brand">
+        <a class="logo" href="#top" style="justify-self:start">FIMCA<i></i><em>Store</em></a>
+        <p class="small" style="max-width:38ch">A loja de vestuário do Centro Universitário Aparício Carvalho. Identidade universitária em peças feitas para sair do campus e ganhar a cidade.</p>
+        <div class="foot__social">
+          <a href="#top" aria-label="Instagram da FIMCA Store">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.2.05 1.8.25 2.2.42.6.22 1 .48 1.4.9.43.42.69.82.9 1.4.18.44.38 1.04.43 2.24.06 1.28.07 1.66.07 4.88s-.01 3.6-.07 4.88c-.05 1.2-.25 1.8-.42 2.24-.22.57-.48.97-.9 1.39-.42.42-.82.68-1.4.9-.44.17-1.04.37-2.24.42-1.28.06-1.66.07-4.88.07s-3.6 0-4.88-.07c-1.2-.05-1.8-.25-2.24-.42-.57-.22-.97-.48-1.39-.9a3.8 3.8 0 0 1-.9-1.4c-.17-.43-.37-1.03-.42-2.23C2.21 15.6 2.2 15.22 2.2 12s.01-3.6.07-4.88c.05-1.2.25-1.8.42-2.24.22-.57.48-.97.9-1.39.42-.42.82-.68 1.4-.9.43-.17 1.03-.37 2.23-.42C8.4 2.21 8.78 2.2 12 2.2zm0 3.24a6.56 6.56 0 1 0 0 13.12 6.56 6.56 0 0 0 0-13.12zm0 10.82a4.26 4.26 0 1 1 0-8.52 4.26 4.26 0 0 1 0 8.52zm8.35-11.08a1.53 1.53 0 1 1-3.07 0 1.53 1.53 0 0 1 3.07 0z"/></svg>
+          </a>
+          <a href="#top" aria-label="WhatsApp da FIMCA Store">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.6 2 2.2 6.4 2.2 11.85c0 1.74.46 3.44 1.33 4.94L2.1 22l5.34-1.4a9.8 9.8 0 0 0 4.6 1.17h.01c5.43 0 9.84-4.4 9.84-9.85 0-2.63-1.03-5.1-2.9-6.96A9.77 9.77 0 0 0 12.04 2zm0 17.96h-.01a8.2 8.2 0 0 1-4.16-1.14l-.3-.18-3.1.81.83-3.02-.2-.31a8.16 8.16 0 0 1-1.25-4.35c0-4.52 3.68-8.2 8.2-8.2a8.14 8.14 0 0 1 5.79 2.4 8.13 8.13 0 0 1 2.4 5.8c0 4.52-3.68 8.19-8.2 8.19zm4.5-6.13c-.25-.13-1.46-.72-1.68-.8-.23-.09-.39-.13-.55.12-.17.25-.64.8-.78.97-.14.16-.29.18-.53.06-.25-.13-1.04-.39-1.99-1.23a7.4 7.4 0 0 1-1.37-1.7c-.14-.25-.02-.38.11-.5.11-.12.25-.29.37-.44.13-.15.17-.25.25-.41.09-.17.05-.31-.02-.44-.06-.12-.55-1.34-.76-1.83-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.42.06-.64.31-.22.25-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.12 3.64.57.25 1.02.4 1.37.5.58.19 1.1.16 1.52.1.46-.07 1.42-.58 1.63-1.15.2-.56.2-1.05.14-1.15-.06-.1-.22-.16-.47-.29z"/></svg>
+          </a>
+          <a href="#top" aria-label="TikTok da FIMCA Store">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.1v12.4a2.59 2.59 0 0 1-2.59 2.5 2.59 2.59 0 1 1 .77-5.06v-3.2a5.72 5.72 0 0 0-.77-.05A5.72 5.72 0 1 0 15.57 15V8.9a7.35 7.35 0 0 0 4.3 1.38V7.2a4.29 4.29 0 0 1-3.27-1.38z"/></svg>
+          </a>
+        </div>
+        <div class="foot__pay">
+          <span>PIX</span><span>Visa</span><span>Master</span><span>Elo</span><span>Boleto</span>
+        </div>
+      </div>
+
+      <div>
+        <h4>Loja</h4>
+        <ul>
+          <li><a href="#mochilas">Mochilas</a></li>
+          <li><a href="#acessorios">Bonés</a></li>
+          <li><a href="#acessorios">Copo térmico</a></li>
+          <li><a href="#acessorios">Chaveiros</a></li>
+          <li><a href="#kits">Kits e ofertas</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Ajuda</h4>
+        <ul>
+          <li><a href="#faq">Medidas e capacidade</a></li>
+          <li><a href="#faq">Trocas e devoluções</a></li>
+          <li><a href="#faq">Retirada no campus</a></li>
+          <li><a href="#faq">Prazos de entrega</a></li>
+          <li><a href="#loja">Fale com a loja</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Institucional</h4>
+        <ul>
+          <li><a href="#loja">Sobre a FIMCA Store</a></li>
+          <li><a href="#loja">Campus Aparício Carvalho</a></li>
+          <li><a href="#kits">Pedidos para turmas</a></li>
+          <li><a href="#faq">Política de privacidade</a></li>
+          <li><a href="#top">Voltar ao topo</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="foot__mark"><span>FIMCA Store</span></div>
+
+    <div class="foot__legal">
+      <p class="kicker">© 2026 FIMCA Store · Centro Universitário Aparício Carvalho</p>
+      <p class="kicker">Campus FIMCA · Porto Velho, RO · Seg a sex, 13h às 22h</p>
+      <p class="kicker">Wear your journey</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ══ sacola ══ -->
+<div class="scrim" id="scrim"></div>
+
+<aside class="bag" id="bag" aria-label="Sacola de compras">
+  <div class="bag__head">
+    <p class="kicker kicker--ink">Sacola <span id="bagCount2">(0)</span></p>
+    <button class="ulink" id="bagClose">Fechar</button>
+  </div>
+  <div class="bag__items" id="bagItems">
+    <p class="bag__empty">Sua sacola está vazia. Comece pelas mochilas da coleção 2026.</p>
+  </div>
+  <div class="bag__foot">
+    <div class="bag__ship" id="bagShip">Faltam <b>R$ 199</b> para o frete grátis em Porto Velho.</div>
+    <div class="bag__sum"><span class="kicker">Subtotal</span><b id="bagTotal">R$ 0</b></div>
+    <button class="btn btn--wide" id="checkout">Finalizar compra
+      <svg viewBox="0 0 16 9" aria-hidden="true"><path d="M0 4.5h14M10.5 1 14 4.5 10.5 8"/></svg>
+    </button>
+    <p class="small" style="text-align:center">Retirada no campus em até 2h · 5% OFF no PIX</p>
+  </div>
+</aside>
+
+<!-- ══ compra rápida ══ -->
+<div class="quick" id="quick" role="dialog" aria-modal="true" aria-labelledby="quickName" aria-hidden="true">
+  <button class="quick__close" id="quickClose" aria-label="Fechar compra rápida">
+    <svg viewBox="0 0 14 14" aria-hidden="true"><path d="m1 1 12 12M13 1 1 13"/></svg>
+  </button>
+  <div class="quick__grid">
+    <div class="quick__media"><img id="quickImg" alt=""></div>
+    <div class="quick__body">
+      <p class="kicker" id="quickTag">Compra rápida</p>
+      <h2 class="h-3" id="quickName">—</h2>
+      <p class="pcard__price" id="quickPrice"></p>
+      <p class="small" id="quickDesc"></p>
+      <div>
+        <p class="kicker" style="margin-bottom:.55rem">Tamanho</p>
+        <div class="sizes" id="quickSizes"></div>
+      </div>
+      <button class="btn btn--wide" id="quickAdd">Adicionar à sacola</button>
+      <p class="small" style="text-align:center">Troca em 7 dias na loja do campus</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══ toast ══ -->
+<div class="toast" id="toast" role="status" aria-live="polite"><i></i><span id="toastMsg"></span></div>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>

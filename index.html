@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FIMCA Store — Campus is the new street</title>
+<meta name="description" content="A FIMCA Store conecta identidade universitária, design e atitude em peças feitas para sair do campus e ganhar a cidade.">
+<meta name="theme-color" content="#131B33">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ══ camada ambiental ══ -->
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"><span data-cursor-label>ver</span></div>
+
+<!-- ══ preloader ══ -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader__mark" id="loaderMark">FIMCA<i></i><em>Store</em></div>
+  <div class="loader__foot">
+    <p class="tag" style="color:color-mix(in srgb,#EDEAE1 55%,transparent)">Campus is<br>the new street</p>
+    <div class="loader__count"><span id="loaderCount">000</span></div>
+  </div>
+  <div class="loader__bar"><i id="loaderBar"></i></div>
+</div>
+
+<!-- ══ ticker ══ -->
+<div class="ticker-top" aria-hidden="true">
+  <div class="ticker-top__track" id="ticker">
+    <span>Campus is the new street</span><span>Novo drop · FIMCA Essentials</span><span>Retire na loja do campus</span><span>Wear your journey</span><span>Seg a sex · 13h às 22h</span>
+  </div>
+</div>
+
+<!-- ══ header ══ -->
+<header class="head" id="head" data-tone="dark">
+  <a class="logo" href="#top" aria-label="FIMCA Store — início">FIMCA<i></i><em>Store</em></a>
+
+  <nav class="nav" aria-label="Principal">
+    <a href="#drop">New drop</a>
+    <a href="#edit">Shop</a>
+    <a href="#cursos">Cursos</a>
+    <a href="#loja">Store</a>
+  </nav>
+
+  <div class="head__end">
+    <button class="bag-btn" id="bagBtn" aria-label="Abrir sacola">Sacola <b id="bagCount">0</b></button>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false"><i></i><i></i></button>
+  </div>
+
+  <div class="head__progress" id="headProgress"></div>
+</header>
+
+<!-- ══ menu ══ -->
+<div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Menu">
+  <ul class="menu__list">
+    <li><a href="#drop" data-menu-link>New drop</a></li>
+    <li><a href="#edit" data-menu-link>Shop the edit</a></li>
+    <li><a href="#cursos" data-menu-link>Seu curso</a></li>
+    <li><a href="#loja" data-menu-link>The FIMCA look</a></li>
+    <li><a href="#limited" data-menu-link>Limited edition</a></li>
+  </ul>
+  <div class="menu__foot">
+    <p class="tag">Campus FIMCA · Porto Velho, RO</p>
+    <p class="tag">Segunda à sexta · 13h às 22h</p>
+    <p class="tag tag--sun">Wear your journey</p>
+  </div>
+</div>
+
+<main id="top">
+
+<!-- ══════════════════ HERO ══════════════════ -->
+<section class="hero" data-surface="dark">
+  <div class="hero__media">
+    <div class="hero__par" id="heroPar">
+      <img id="heroImg" src="assets/img/hero-campus.jpg" alt="Estudantes da FIMCA na biblioteca do campus vestindo peças da FIMCA Store" fetchpriority="high">
+    </div>
+  </div>
+
+  <div class="hero__inner">
+    <div class="hero__eyebrow">
+      <span class="tag tag--sun">FIMCA Store</span>
+      <hr>
+      <span class="tag" style="color:color-mix(in srgb,#EDEAE1 62%,transparent)">Coleção 2026</span>
+    </div>
+
+    <h1 class="hero__title display display--mega">
+      <span class="line"><span>Campus is the</span></span>
+      <span class="line"><span>new street</span></span>
+    </h1>
+
+    <div class="hero__bottom">
+      <div class="hero__pitch hero__fade">
+        <p>A rotina muda.</p>
+        <p>O estilo acompanha.</p>
+      </div>
+      <div class="hero__claim hero__fade">
+        <p class="lede" style="color:color-mix(in srgb,#EDEAE1 66%,transparent)">Identidade universitária, design e atitude em peças feitas para sair do campus e ganhar a cidade.</p>
+      </div>
+      <div class="hero__cta hero__fade">
+        <a class="btn" href="#edit" data-magnetic>Shop now
+          <svg width="17" height="9" viewBox="0 0 17 9" fill="none" aria-hidden="true"><path d="M0 4.5h15M11.5 1 15 4.5 11.5 8" stroke="currentColor"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-cue" aria-hidden="true">Role<i></i></div>
+</section>
+
+<!-- ══════════════════ MANIFESTO ══════════════════ -->
+<section class="band manifesto grid" data-surface="light">
+  <p class="manifesto__text" data-fill>
+    A FIMCA Store conecta identidade universitária, design e atitude em peças feitas para sair do campus e ganhar a cidade. <b>Wear your journey.</b>
+  </p>
+  <div class="manifesto__meta">
+    <span class="tag tag--field">Since 1998</span>
+    <span class="tag tag--mute">Centro Universitário Aparício Carvalho</span>
+    <span class="tag tag--mute">Porto Velho · Rondônia</span>
+  </div>
+</section>
+
+<!-- ══════════════════ NEW DROP ══════════════════ -->
+<section class="band drop grid" id="drop" data-surface="light">
+  <div class="drop__text">
+    <div>
+      <p class="tag tag--field" data-reveal="fade">New drop</p>
+      <h2 class="display display--xl" data-reveal="mask" style="--d:80ms; margin-top:.6rem">
+        <span>FIMCA<br>Essentials</span>
+      </h2>
+    </div>
+
+    <ul class="drop__list" data-reveal="fade" style="--d:160ms">
+      <li><span>01</span><span>Peças essenciais</span></li>
+      <li><span>02</span><span>Visual minimalista</span></li>
+      <li><span>03</span><span>Identidade que fala por você</span></li>
+    </ul>
+
+    <p class="lede" data-reveal="fade" style="--d:220ms">Uma coleção criada para quem faz parte da FIMCA e não abre mão de estilo — dentro ou fora da faculdade.</p>
+
+    <div data-reveal="fade" style="--d:280ms">
+      <a class="btn" href="#edit" data-magnetic>Descobrir a coleção
+        <svg width="17" height="9" viewBox="0 0 17 9" fill="none" aria-hidden="true"><path d="M0 4.5h15M11.5 1 15 4.5 11.5 8" stroke="currentColor"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <figure class="drop__media" data-reveal="img" data-cursor="som">
+    <video id="dropVideo" src="assets/video/drop-01.mp4" poster="assets/img/poster-01.jpg" muted loop playsinline preload="metadata"></video>
+    <figcaption class="drop__badge"><i></i><span class="tag">Campanha 01 · Chuva no campus</span></figcaption>
+    <div class="vprog"><i id="dropProg"></i></div>
+  </figure>
+</section>
+
+<!-- ══════════════════ ASSINATURA — MADE TO REPRESENT ══════════════════ -->
+<section class="band represent grid" id="represent" data-surface="dark">
+  <div class="represent__stack">
+    <p class="tag tag--sun" data-reveal="fade" style="margin-bottom:clamp(1.6rem,4vh,3rem)">Made to represent</p>
+
+    <span class="neg" data-neg="0">Não é uniforme</span>
+    <span class="neg" data-neg="1">Não é souvenir</span>
+    <span class="neg neg--keep" data-neg-keep>É identidade</span>
+  </div>
+
+  <div class="represent__foot">
+    <p class="lede" style="max-width:46ch">Modelagens, estampas e detalhes pensados para transformar o universo FIMCA em uma experiência de moda.</p>
+    <p class="tag tag--sun">From campus to everywhere</p>
+  </div>
+</section>
+
+<div class="marquee marquee--outline" data-surface="dark" aria-hidden="true">
+  <div class="marquee__track" id="marquee1">
+    <span>From campus to everywhere</span><span>From campus to everywhere</span><span>From campus to everywhere</span><span>From campus to everywhere</span>
+  </div>
+</div>
+
+<!-- ══════════════════ SHOP THE EDIT ══════════════════ -->
+<section class="edit" id="edit" data-surface="light">
+  <div class="edit__head">
+    <div class="section-head">
+      <div>
+        <p class="tag tag--field" data-reveal="fade">Shop the edit</p>
+        <h2 class="display display--xl" data-reveal="mask" style="--d:80ms; margin-top:.5rem"><span>O drop<br>completo</span></h2>
+      </div>
+      <p class="tag tag--mute" data-reveal="fade" style="--d:160ms">Role para percorrer · 8 peças</p>
+    </div>
+  </div>
+
+  <div class="edit__track" id="editTrack">
+    <div class="edit__sticky">
+      <div class="edit__rail" id="editRail">
+
+        <!-- categoria 01 -->
+        <div class="cat">
+          <p class="cat__n">Edit 01</p>
+          <div>
+            <h3>Tees</h3>
+            <p>A base de tudo. Algodão pesado, caimento largo, gráfico contido.</p>
+          </div>
+        </div>
+
+        <article class="card" data-cursor="ver">
+          <div class="card__media">
+            <span class="card__flag">Best seller</span>
+            <img src="assets/img/p-tee-fimca.jpg" alt="Camiseta FIMCA Since 1998 em algodão bone">
+            <button class="card__add" data-add data-name="Camiseta Since 1998" data-price="129" data-img="assets/img/p-tee-fimca.jpg">Adicionar <span>+</span></button>
+          </div>
+          <div class="card__info">
+            <div><h4>Camiseta Since 1998</h4><p>Bone · P ao GG</p></div>
+            <span class="card__price">R$ 129</span>
+          </div>
+        </article>
+
+        <article class="card" data-cursor="ver">
+          <div class="card__media">
+            <img src="assets/img/p-tee-white.jpg" alt="Camiseta FIMCA Essentials branca com brasão bordado">
+            <button class="card__add" data-add data-name="Camiseta Essentials" data-price="119" data-img="assets/img/p-tee-white.jpg">Adicionar <span>+</span></button>
+          </div>
+          <div class="card__info">
+            <div><h4>Camiseta Essentials</h4><p>Off-white · P ao GG</p></div>
+            <span class="card__price">R$ 119</span>
+          </div>
+        </article>
+
+        <article class="card" data-cursor="ver">
+          <div class="card__media">
+            <img src="assets/img/p-tee-graphic.jpg" alt="Camiseta FIMCA com estampa gráfica do campus nas costas">
+            <button class="card__add" data-add data-name="Camiseta Campus Graphic" data-price="139" data-img="assets/img/p-tee-graphic.jpg">Adicionar <span>+</span></button>
+          </div>
+          <div class="card__info">
+            <div><h4>Campus Graphic</h4><p>Estampa costas · P ao GG</p></div>
+            <span class="card__price">R$ 139</span>
+          </div>
+        </article>
+
+        <!-- categoria 02 -->
+        <div class="cat">
+          <p class="cat__n">Edit 02</p>
+          <div>
+            <h3>Jerseys</h3>
+            <p>Peso de time, corte de rua. Conforto e atitude no mesmo lugar.</p>
+          </div>
+        </div>
+
+        <article class="card" data-cursor="ver">
+          <div class="card__media">
+            <span class="card__flag">Atlética</span>
+            <img src="assets/img/p-jersey.jpg" alt="Jersey de baseball FIMCA Metropolitana azul-marinho com detalhes amarelos">
+            <button class="card__add" data-add data-name="Jersey Metropolitana" data-price="289" data-img="assets/img/p-jersey.jpg">Adicionar <span>+</span></button>
+          </div>
+          <div class="card__info">
+            <div><h4>Jersey Metropolitana</h4><p>Navy · P ao GG</p></div>
+            <span class="card__price">R$ 289</span>
+          </div>
+        </article>
+
+        <article class="card" data-cursor="ver">
+          <div class="card__media">
+            <img src="assets/img/p-polo.jpg" alt="Polo FIMCA azul-marinho com vivo amarelo">
+            <button class="card__add" data-add data-name="Polo Atlética" data-price="179" data-img="assets/img/p-polo.jpg">Adicionar <span>+</span></button>
+          </div>
+          <div class="card__info">
+            <div><h4>Polo Atlética</h4><p>Navy · P ao GG</p></div>
+            <span class="card__price">R$ 179</span>
+          </div>
+        </article>
+
+        <!-- categoria 03 -->
+        <div class="cat">
+          <p class="cat__n">Edit 03</p>
+          <div>
+            <h3>Acessórios</h3>
+            <p>Os detalhes fecham o look — e resolvem o dia inteiro de aula.</p>
+          </div>
+        </div>
+
+        <article class="card" data-cursor="ver">
+          <div class="card__media">
+            <img src="assets/img/p-backpack.jpg" alt="Mochila FIMCA preta com logo bordado">
+            <button class="card__add" data-add data-name="Mochila Daily" data-price="249" data-img="assets/img/p-backpack.jpg">Adicionar <span>+</span></button>
+          </div>
+          <div class="card__info">
+            <div><h4>Mochila Daily</h4><p>Preta · 22L</p></div>
+            <span class="card__price">R$ 249</span>
+          </div>
+        </article>
+
+        <article class="card" data-cursor="ver">
+          <div class="card__media">
+            <img src="assets/img/p-tumbler.jpg" alt="Copo térmico FIMCA preto de 1,2 litro">
+            <button class="card__add" data-add data-name="Copo Térmico 1,2L" data-price="169" data-img="assets/img/p-tumbler.jpg">Adicionar <span>+</span></button>
+          </div>
+          <div class="card__info">
+            <div><h4>Copo Térmico</h4><p>Preto · 1,2 L</p></div>
+            <span class="card__price">R$ 169</span>
+          </div>
+        </article>
+
+        <article class="card" data-cursor="ver">
+          <div class="card__media">
+            <img src="assets/img/p-caderno.jpg" alt="Caderno FIMCA bone com espiral">
+            <button class="card__add" data-add data-name="Caderno Bone" data-price="79" data-img="assets/img/p-caderno.jpg">Adicionar <span>+</span></button>
+          </div>
+          <div class="card__info">
+            <div><h4>Caderno Bone</h4><p>Espiral · 160 folhas</p></div>
+            <span class="card__price">R$ 79</span>
+          </div>
+        </article>
+
+        <!-- categoria 04 -->
+        <div class="cat">
+          <p class="cat__n">Edit 04</p>
+          <div>
+            <h3>Limited<br>drops</h3>
+            <p>Peças especiais, quantidades limitadas. Quando acaba, acabou.</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="edit__bar" aria-hidden="true"><i id="editBar"></i></div>
+    </div>
+  </div>
+
+  <div class="edit__foot">
+    <a class="btn" href="#limited" data-magnetic>Shop all
+      <svg width="17" height="9" viewBox="0 0 17 9" fill="none" aria-hidden="true"><path d="M0 4.5h15M11.5 1 15 4.5 11.5 8" stroke="currentColor"/></svg>
+    </a>
+    <p class="tag tag--mute">Retirada na loja do campus · Entrega em Porto Velho</p>
+  </div>
+</section>
+
+<!-- ══════════════════ CURSOS ══════════════════ -->
+<section class="band grid" id="cursos" data-surface="light">
+  <div class="courses__head">
+    <div class="section-head">
+      <div>
+        <p class="tag tag--field" data-reveal="fade">Your course, your identity</p>
+        <h2 class="display display--xl" data-reveal="mask" style="--d:80ms; margin-top:.5rem"><span>Vista sua<br>trajetória</span></h2>
+      </div>
+      <p class="lede" data-reveal="fade" style="--d:160ms; text-align:right">Sua escolha diz muito sobre quem você está se tornando. Vista seu curso, seu momento, sua trajetória.</p>
+    </div>
+  </div>
+
+  <ul class="courses__list" data-course-list>
+    <li><a href="#edit" data-course-img="assets/img/p-tee-fimca.jpg"><span>Medicina</span><span>Ver coleção</span></a></li>
+    <li><a href="#edit" data-course-img="assets/img/p-tee-white.jpg"><span>Odontologia</span><span>Ver coleção</span></a></li>
+    <li><a href="#edit" data-course-img="assets/img/p-tee-graphic.jpg"><span>Enfermagem</span><span>Ver coleção</span></a></li>
+    <li><a href="#edit" data-course-img="assets/img/p-jersey.jpg"><span>Psicologia</span><span>Ver coleção</span></a></li>
+    <li><a href="#edit" data-course-img="assets/img/p-polo.jpg"><span>Direito</span><span>Ver coleção</span></a></li>
+    <li><a href="#edit" data-course-img="assets/img/p-backpack.jpg"><span>Biomedicina</span><span>Ver coleção</span></a></li>
+    <li><a href="#edit" data-course-img="assets/img/p-tumbler.jpg"><span>Fisioterapia</span><span>Ver coleção</span></a></li>
+    <li><a href="#edit" data-course-img="assets/img/p-caderno.jpg"><span>Nutrição</span><span>Ver coleção</span></a></li>
+    <li><a href="#edit" data-course-img="assets/img/p-tee-fimca.jpg"><span>Educação Física</span><span>Ver coleção</span></a></li>
+    <li><a href="#edit" data-course-img="assets/img/p-jersey.jpg"><span>Engenharia Civil</span><span>Ver coleção</span></a></li>
+  </ul>
+
+  <div class="courses__cta">
+    <a class="btn" href="#edit" data-magnetic>Escolha seu curso
+      <svg width="17" height="9" viewBox="0 0 17 9" fill="none" aria-hidden="true"><path d="M0 4.5h15M11.5 1 15 4.5 11.5 8" stroke="currentColor"/></svg>
+    </a>
+  </div>
+</section>
+
+<div class="follower" id="follower" aria-hidden="true"><img id="followerImg" src="assets/img/p-tee-fimca.jpg" alt=""></div>
+
+<!-- ══════════════════ NOT JUST MERCH ══════════════════ -->
+<section class="everywhere" id="everywhere" data-surface="dark">
+  <div class="everywhere__track" id="ewTrack">
+    <div class="everywhere__sticky">
+      <video id="ewVideo" src="assets/video/drop-02.mp4" poster="assets/img/poster-02.jpg" muted loop playsinline preload="metadata"></video>
+      <div class="everywhere__veil" aria-hidden="true"></div>
+
+      <div class="everywhere__inner">
+        <div class="everywhere__mid" style="align-items:flex-start">
+          <p class="tag tag--sun">Not just merch</p>
+          <p class="tag" style="color:color-mix(in srgb,#EDEAE1 60%,transparent); text-align:right">Campanha 02<br>Entre aulas</p>
+        </div>
+
+        <div>
+          <p class="tag" style="color:color-mix(in srgb,#EDEAE1 60%,transparent); margin-bottom:1rem">Criada para ser usada</p>
+          <div class="roller" aria-label="Na faculdade, na rua, no café, na viagem, na rotina">
+            <div class="roller__track" id="roller">
+              <span>Na faculdade</span>
+              <span>Na rua</span>
+              <span>No café</span>
+              <span>Na viagem</span>
+              <span>Na rotina</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="everywhere__foot">
+          <p class="tag" style="color:color-mix(in srgb,#EDEAE1 74%,transparent)">A FIMCA Store transforma pertencimento em estética</p>
+          <button class="sound off" id="soundBtn" aria-pressed="false">
+            <i aria-hidden="true"><b></b><b></b><b></b><b></b></i> Som
+          </button>
+          <p class="tag tag--sun">College wear redefined</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ THE FIMCA LOOK / LOJA ══════════════════ -->
+<section class="band grid" id="loja" data-surface="light">
+  <figure class="look__media" data-reveal="img" data-cursor="look">
+    <video id="lookVideo" src="assets/video/drop-01.mp4" poster="assets/img/poster-01.jpg" muted loop playsinline preload="metadata"></video>
+    <figcaption class="drop__badge"><i></i><span class="tag">Lookbook · FIMCA Essentials</span></figcaption>
+    <div class="vprog"><i id="lookProg"></i></div>
+  </figure>
+
+  <div class="look__text">
+    <div>
+      <p class="tag tag--field" data-reveal="fade">The FIMCA look</p>
+      <h2 class="display display--xl" data-reveal="mask" style="--d:80ms; margin-top:.5rem"><span>Style it<br>your way</span></h2>
+    </div>
+
+    <ul class="look__contrast" data-reveal="fade" style="--d:160ms">
+      <li><i>—</i><span>Menos cara de produto institucional</span></li>
+      <li class="pos"><i>+</i><span>Mais cara de marca</span></li>
+    </ul>
+
+    <p class="lede" data-reveal="fade" style="--d:220ms">Peças versáteis, contemporâneas e feitas para compor o seu estilo. A loja fica dentro do campus — dá para experimentar, provar o caimento e levar na hora.</p>
+
+    <div class="hours" data-reveal="fade" style="--d:280ms">
+      <img class="hours__shot" id="storeImg" src="assets/img/store-front.jpg" alt="Fachada de madeira da FIMCA Store no campus, ao entardecer">
+      <div class="hours__facts">
+        <div>
+          <p class="tag tag--mute">Horário</p>
+          <strong>Seg a sex · 13h — 22h</strong>
+        </div>
+        <div>
+          <p class="tag tag--mute">Onde</p>
+          <strong>Campus FIMCA · PVH</strong>
+        </div>
+      </div>
+    </div>
+
+    <div data-reveal="fade" style="--d:340ms">
+      <a class="btn" href="#limited" data-magnetic>Ver looks
+        <svg width="17" height="9" viewBox="0 0 17 9" fill="none" aria-hidden="true"><path d="M0 4.5h15M11.5 1 15 4.5 11.5 8" stroke="currentColor"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ LIMITED EDITION ══════════════════ -->
+<section class="band grid" id="limited" data-surface="dark">
+  <div class="limited__head">
+    <p class="tag tag--sun" data-reveal="fade">Limited edition</p>
+    <h2 class="display display--xl" data-reveal="mask" style="--d:80ms; margin:.5rem 0 1.4rem"><span>New season<br>new pieces</span></h2>
+    <p class="lede" data-reveal="fade" style="--d:160ms">Novos drops, novas cores, novas formas de vestir FIMCA. Peças selecionadas e lançamentos especiais disponíveis por tempo limitado.</p>
+  </div>
+
+  <div class="limited__timer" data-reveal="fade" style="--d:220ms">
+    <p class="tag tag--mute" style="margin-bottom:1.1rem">Próximo drop em</p>
+    <div class="timer" id="timer">
+      <div><b id="tD">00</b><small>Dias</small></div>
+      <div><b id="tH">00</b><small>Hrs</small></div>
+      <div><b id="tM">00</b><small>Min</small></div>
+      <div><b id="tS">00</b><small>Seg</small></div>
+    </div>
+  </div>
+
+  <div class="limited__grid">
+    <div class="cards">
+      <article class="card" data-cursor="ver" data-reveal="fade">
+        <div class="card__media">
+          <span class="card__flag">Limited</span>
+          <img src="assets/img/p-jersey.jpg" alt="Jersey FIMCA Metropolitana edição limitada">
+          <button class="card__add" data-add data-name="Jersey Metropolitana" data-price="289" data-img="assets/img/p-jersey.jpg">Adicionar <span>+</span></button>
+        </div>
+        <div class="card__info"><div><h4>Jersey Metropolitana</h4><p>40 unidades</p></div><span class="card__price">R$ 289</span></div>
+      </article>
+
+      <article class="card" data-cursor="ver" data-reveal="fade" style="--d:80ms">
+        <div class="card__media">
+          <span class="card__flag">Limited</span>
+          <img src="assets/img/p-tee-graphic.jpg" alt="Camiseta FIMCA Campus Graphic edição limitada">
+          <button class="card__add" data-add data-name="Campus Graphic" data-price="139" data-img="assets/img/p-tee-graphic.jpg">Adicionar <span>+</span></button>
+        </div>
+        <div class="card__info"><div><h4>Campus Graphic</h4><p>80 unidades</p></div><span class="card__price">R$ 139</span></div>
+      </article>
+
+      <article class="card" data-cursor="ver" data-reveal="fade" style="--d:160ms">
+        <div class="card__media">
+          <span class="card__flag">Limited</span>
+          <img src="assets/img/p-backpack.jpg" alt="Mochila FIMCA Daily edição limitada">
+          <button class="card__add" data-add data-name="Mochila Daily" data-price="249" data-img="assets/img/p-backpack.jpg">Adicionar <span>+</span></button>
+        </div>
+        <div class="card__info"><div><h4>Mochila Daily</h4><p>25 unidades</p></div><span class="card__price">R$ 249</span></div>
+      </article>
+
+      <article class="card" data-cursor="ver" data-reveal="fade" style="--d:240ms">
+        <div class="card__media">
+          <span class="card__flag">Limited</span>
+          <img src="assets/img/p-tumbler.jpg" alt="Copo térmico FIMCA edição limitada">
+          <button class="card__add" data-add data-name="Copo Térmico 1,2L" data-price="169" data-img="assets/img/p-tumbler.jpg">Adicionar <span>+</span></button>
+        </div>
+        <div class="card__info"><div><h4>Copo Térmico</h4><p>60 unidades</p></div><span class="card__price">R$ 169</span></div>
+      </article>
+    </div>
+  </div>
+
+  <div class="limited__cta">
+    <a class="btn btn--solid" href="#edit" data-magnetic>Explore the drop
+      <svg width="17" height="9" viewBox="0 0 17 9" fill="none" aria-hidden="true"><path d="M0 4.5h15M11.5 1 15 4.5 11.5 8" stroke="currentColor"/></svg>
+    </a>
+  </div>
+</section>
+
+<div class="marquee" data-surface="dark" aria-hidden="true">
+  <div class="marquee__track" id="marquee2">
+    <span>Wear your journey</span><span>Wear your journey</span><span>Wear your journey</span><span>Wear your journey</span>
+  </div>
+</div>
+
+<!-- ══════════════════ FECHAMENTO ══════════════════ -->
+<section class="band becoming grid" data-surface="dark">
+  <div class="becoming__inner">
+    <p class="tag tag--sun" data-reveal="fade" style="margin-bottom:clamp(1.4rem,4vh,2.4rem)">FIMCA Store</p>
+    <h2 class="display display--mega">
+      <span class="line" data-reveal="mask"><span>Wear what</span></span>
+      <span class="line" data-reveal="mask" style="--d:110ms"><span>you're becoming</span></span>
+    </h2>
+
+    <div class="becoming__row">
+      <p class="lede" data-reveal="fade" style="max-width:40ch">Você não está apenas vivendo a faculdade. Está construindo quem vai ser depois dela. <strong style="color:var(--fg)">Vista essa fase.</strong></p>
+      <a class="btn btn--solid" href="#edit" data-magnetic data-reveal="fade" style="--d:120ms">Shop FIMCA
+        <svg width="17" height="9" viewBox="0 0 17 9" fill="none" aria-hidden="true"><path d="M0 4.5h15M11.5 1 15 4.5 11.5 8" stroke="currentColor"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ══════════════════ FOOTER ══════════════════ -->
+<footer class="foot" data-surface="dark">
+  <div class="foot__grid">
+    <div class="foot__news">
+      <h5>Entre na lista do próximo drop</h5>
+      <form class="news" id="newsForm" novalidate>
+        <label class="tag" for="newsEmail" style="position:absolute;left:-9999px">Seu e-mail</label>
+        <input id="newsEmail" type="email" placeholder="seu@email.com" autocomplete="email" required>
+        <button type="submit">Assinar</button>
+      </form>
+      <p class="news__msg" id="newsMsg" role="status"></p>
+    </div>
+
+    <div class="foot__col">
+      <h5>Loja</h5>
+      <ul>
+        <li><a href="#drop">New drop</a></li>
+        <li><a href="#edit">Tees</a></li>
+        <li><a href="#edit">Jerseys</a></li>
+        <li><a href="#edit">Acessórios</a></li>
+        <li><a href="#limited">Limited drops</a></li>
+      </ul>
+    </div>
+
+    <div class="foot__col">
+      <h5>Ajuda</h5>
+      <ul>
+        <li><a href="#loja">Tabela de medidas</a></li>
+        <li><a href="#loja">Trocas e devoluções</a></li>
+        <li><a href="#loja">Retirada no campus</a></li>
+        <li><a href="#loja">Fale com a loja</a></li>
+      </ul>
+    </div>
+
+    <div class="foot__col">
+      <h5>FIMCA</h5>
+      <ul>
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#loja">Campus</a></li>
+        <li><a href="#everywhere">Instagram</a></li>
+        <li><a href="#top">Voltar ao topo</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="foot__mark" data-mark><span>FIMCA Store</span></div>
+
+  <div class="foot__legal">
+    <p class="tag">© 2026 FIMCA Store · Centro Universitário Aparício Carvalho</p>
+    <p class="tag">Campus FIMCA · Porto Velho, RO · Seg a sex, 13h às 22h</p>
+    <p class="tag">Campus is the new street</p>
+  </div>
+</footer>
+
+<!-- ══ sacola ══ -->
+<div class="scrim" id="scrim"></div>
+<aside class="bag" id="bag" aria-label="Sacola" aria-hidden="true">
+  <div class="bag__head">
+    <p class="tag">Sacola <span id="bagCount2">(0)</span></p>
+    <button class="ulink" id="bagClose">Fechar</button>
+  </div>
+  <div class="bag__items" id="bagItems">
+    <p class="bag__empty">Sua sacola está vazia. Comece pelo drop FIMCA Essentials.</p>
+  </div>
+  <div class="bag__foot">
+    <div class="bag__sum"><span class="tag tag--mute">Subtotal</span><b id="bagTotal">R$ 0</b></div>
+    <button class="btn btn--solid" id="checkout">Finalizar compra
+      <svg width="17" height="9" viewBox="0 0 17 9" fill="none" aria-hidden="true"><path d="M0 4.5h15M11.5 1 15 4.5 11.5 8" stroke="currentColor"/></svg>
+    </button>
+  </div>
+</aside>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
